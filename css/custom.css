@@ -4,16 +4,16 @@
   display: block;
   margin-top: 8px;
   font-size: 14px;
-  color: #666;
+  color: #ccc;
   font-style: italic;
   text-align: center;
 }
 
 /* 侧边栏卡片渐变背景 + 发光边框 */
 body .aside-content .card-widget {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+  background: linear-gradient(135deg, #000000 0%, #434343 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(8px);
   border-radius: 12px;
   transition: all 0.3s ease;
@@ -21,7 +21,7 @@ body .aside-content .card-widget {
 }
 
 body .aside-content .card-widget:hover {
-  box-shadow: 0 12px 40px rgba(31, 38, 135, 0.2);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
   transform: translateY(-2px);
 }
 
@@ -29,19 +29,74 @@ body .aside-content .card-widget:hover {
 body .aside-content .avatar-img img {
   border-radius: 50%;
   transition: all 0.5s ease;
-  box-shadow: 0 0 15px rgba(100, 149, 237, 0.3);
+  box-shadow: 0 0 15px rgba(100, 149, 237, 0.5);
 }
 
 body .aside-content .avatar-img img:hover {
   transform: scale(1.05) rotate(360deg);
-  box-shadow: 0 0 25px rgba(100, 149, 237, 0.6);
+  box-shadow: 0 0 25px rgba(100, 149, 237, 0.8);
 }
 
 /* 签名文字渐变效果 */
 body .aside-content .author-info-description {
-  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(90deg, #87ceeb 0%, #1e90ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 500;
   letter-spacing: 1px;
+}
+
+/* -------------- 首页文章卡片美化 -------------- */
+#recent-posts > .recent-post-item {
+  background: linear-gradient(135deg, #000000 0%, #434343 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+#recent-posts > .recent-post-item:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  transform: translateY(-3px);
+}
+
+/* -------------- 页脚美化 -------------- */
+#footer {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  color: #ccc;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#footer-wrap {
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* -------------- 导航栏美化 -------------- */
+#page-header {
+  background: linear-gradient(135deg, #000000 0%, #434343 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#site-name,
+#site-subtitle {
+  color: #fff !important;
+}
+
+/* -------------- 文章内容美化 -------------- */
+#article-container {
+  line-height: 1.8;
+  color: #ddd;
+}
+
+#article-container h1,
+#article-container h2,
+#article-container h3 {
+  background: linear-gradient(90deg, #87ceeb 0%, #1e90ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  margin: 24px 0 16px 0;
 }
