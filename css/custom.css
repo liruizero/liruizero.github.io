@@ -1,0 +1,55 @@
+/* 头像圆形裁剪 + 悬停旋转效果 */
+#sidebar .avatar-img img {
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+#sidebar .avatar-img img:hover {
+  transform: rotate(360deg);
+}
+/* 签名字体和间距调整 */
+.author-info-description {
+  margin-top: 8px;/* 侧边栏卡片阴影 */
+#sidebar .card-widget {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px; /* 侧边栏卡片渐变背景 + 发光边框 */
+.aside-content .card-widget {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.aside-content .card-widget:hover {
+  box-shadow: 0 12px 40px rgba(31, 38, 135, 0.2);
+  transform: translateY(-2px);
+}
+
+/* 头像悬浮放大 + 发光效果 */
+.aside-content .avatar-img img {
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 15px rgba(100, 149, 237, 0.3);
+}
+
+.aside-content .avatar-img img:hover {
+  transform: scale(1.05) rotate(360deg);
+  box-shadow: 0 0 25px rgba(100, 149, 237, 0.6);
+}
+
+/* 签名文字渐变效果 */
+.aside-content .author-info-description {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+}
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
+  letter-spacing: 1px;
+}
